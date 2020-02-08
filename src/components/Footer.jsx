@@ -22,6 +22,10 @@ const Button = styled(Link)`
     margin-left: 30px;
     text-decoration: none;
     color: black;
+
+    :hover {
+        text-decoration: underline;
+    }
 `;
 
 const Footer = () => {

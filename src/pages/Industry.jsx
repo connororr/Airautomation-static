@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 const Industry = (props) => {
     return (
         <Wrapper>
-            
+
         </Wrapper>
     );
 }

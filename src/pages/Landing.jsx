@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
-import TechImg from '../images/techimg.png';
+import TechImg from '../images/techimg.jpeg';
 import styled from 'styled-components';
 //import BannerImg from '../components/BannerImg.jsx';
 
 const BannerImg = styled.img`
     height: 300px;
     width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
+    position: centre;
+    object-fit: cover;
+`;
+
+const BannerImgTest = styled.div`
+    background: url("../images/techimg.jpeg");
+    height: 300px;
+    width: 100%;
+    background-size: cover;
 `;
 
 const BusinessDescription = styled.div`
