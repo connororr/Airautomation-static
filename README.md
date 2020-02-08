@@ -10,7 +10,7 @@ Currently four pages need to be made:
 3. valve/cylinder page 
 4. contact us page. 
 
-In the future I would also like to make an online product catalogue similar to this https://www.festo.com/us/en/c/automation/industrial-automation-id_pim2/ for pneumatic parts that are imported from italy.
+In the future I would also like to make an online product catalogue, and maybe online store, similar to this https://www.festo.com/us/en/c/automation/industrial-automation-id_pim2/ for pneumatic parts that are imported from italy.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
