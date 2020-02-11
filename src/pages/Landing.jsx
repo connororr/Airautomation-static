@@ -27,7 +27,8 @@ const BusinessDescriptionWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 250px;
+    height: 50%;
+    padding-bottom: 15px;
 `;
 
 const DescriptionTitle = styled.h3`
@@ -51,7 +52,7 @@ const Wrapper = styled.div`
 `;
 
 const Locations = styled.div`
-    height: 250px;
+    height: 50%;
     border: 1px solid black;
     display: flex;
     align-items; center;

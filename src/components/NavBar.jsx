@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from 'styled-components';
 import { Link, navigate } from '@reach/router';
 import Logo from '../images/logo2.png';
+import MenuButton from './MenuButton.jsx';
 
 const Wrapper = styled.div`
     display: flex;
@@ -22,20 +23,20 @@ const HeadingsMenu = styled.div`
 
 const DropDownMenu = styled.div`
     box-sizing: border-box;
-    width: 100%;
-    height: 230px;
+    width: 400px;
     background-color: white;
     box-shadow: 0 8px 6px -6px black;
     position: absolute;
+    flex-direction: column;
     display: none;
     left: 0;
     top: 70px;
-    padding-left: 5%;
 `;
 
 const IndustriesDropDownHover = styled.div`
     :hover ${DropDownMenu} {
         display: flex;
+        left: 415px;
     }
 `;
 
@@ -43,6 +44,7 @@ const IndustriesDropDownHover = styled.div`
 const ProductsDropDownHover = styled.div`
     :hover ${DropDownMenu} {
         display: flex;
+        left: 305px;
     }
 `;
 
@@ -70,7 +72,7 @@ const LogoWrapper = styled.img`
 
 const Buttons = styled.div`
     margin-left: 16px;
-    @media screen and (max-width: 665px) {
+    @media screen and (max-width: 865px) {
 		display: none;
     }
     display: flex;
@@ -80,7 +82,6 @@ const Buttons = styled.div`
 const SubMenu = styled.div`
     width: 20%;
     height: 100%;
-    margin-left: 2.5%;
     display: flex;
     flex-direction: column;
     background-color: grey;
@@ -142,14 +143,36 @@ const NavBar = () => {
                         Products▼
                     </Button>
                     <DropDownMenu>
-                        <SubMenu>
-                            
-                        </SubMenu>
+                            <MenuButton
+                                title='Our Valve Range'
+                                description='Testing button'
+                                link=''
+                            />
+                            <MenuButton
+                                title='Cylinders/Other'
+                                description='Testing button2'
+                                link=''
+                            />
                     </DropDownMenu>
                 </ProductsDropDownHover>
                 <IndustriesDropDownHover>
                     <Button to=''>Industries ▼</Button>
                     <DropDownMenu>
+                        <MenuButton
+                            title='Timber Mills'
+                            description='Testing'
+                            link=''
+                        />
+                        <MenuButton
+                            title='Mining'
+                            description='Testing'
+                            link=''
+                        />
+                        <MenuButton
+                            title='Transport'
+                            description='Testing'
+                            link=''
+                        />
                     </DropDownMenu>
                 </IndustriesDropDownHover>
                 <Button to=''>Contact Us</Button>
