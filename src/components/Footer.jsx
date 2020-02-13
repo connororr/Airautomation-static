@@ -31,12 +31,14 @@ const Button = styled(Link)`
 const Footer = () => {
 
     const pages = [
-        { name: 'Pneumax', location: '' },
-        { name: 'Fittings', location: '' },
+        { name: 'Air & Automation', location: '' },
+        { name: 'Valve range', location: '' },
+        { name: 'Cylinders/others', location: '/industry/' },
         { name: 'Mining', location: '/industry/' },
-        { name: 'Transport', location: '/industry/' },
         { name: 'Timber Mills', location: 'industry/' },
-        { name: 'Contact Us', location: '' }, // scroll down to the location bit when pressed
+        { name: 'Transport', location: '' }, // scroll down to the location bit when pressed
+        { name: 'Contact Us', location: '' },
+        { name: 'About Us', location: '' } 
     ];
 
     return (
@@ -48,7 +50,6 @@ const Footer = () => {
 
         </Wrapper>
     );
-
 }
 
 export default Footer;

@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
 import TechImg from '../images/techimg.jpeg';
 import styled from 'styled-components';
-//import BannerImg from '../components/BannerImg.jsx';
+import BannerImg from '../components/BannerImg.jsx';
 
-const BannerImg = styled.img`
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
-    position: centre;
-    object-fit: cover;
-`;
-
-const BannerImgTest = styled.div`
-    background: url("../images/techimg.jpeg");
-    height: 300px;
-    width: 100%;
-    background-size: cover;
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-width: 100%;
+    margin-top: 70px;
 `;
 
 const BusinessDescription = styled.div`
@@ -42,13 +35,6 @@ const Description = styled.p`
     line-height: 26px;
     color: #242222;
     width: 50%;
-`;
-
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    min-width: 100%;
 `;
 
 const Locations = styled.div`
@@ -84,7 +70,7 @@ const Address = styled.p`
 const Landing = () => {
     return (
         <Wrapper>
-            <BannerImg src={TechImg} />
+            <BannerImg img={TechImg} />
             <BusinessDescriptionWrapper>
                 <BusinessDescription>
                     <DescriptionTitle> Custom-made valves and Cylinders </DescriptionTitle>

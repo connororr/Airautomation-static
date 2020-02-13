@@ -40,7 +40,6 @@ const IndustriesDropDownHover = styled.div`
     }
 `;
 
-
 const ProductsDropDownHover = styled.div`
     :hover ${DropDownMenu} {
         display: flex;

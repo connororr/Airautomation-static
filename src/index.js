@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Landing from './pages/Landing';
+import Product from './pages/Product';
 import { Router } from '@reach/router';
 import NavBar from './components/NavBar';
 import Layout from './components/Layout';
@@ -14,6 +15,7 @@ ReactDOM.render(
         <NavBar />
         <Router>
             <Landing path='/' />
+            <Product path='/product' />
         </Router>
         <Footer />
     </Layout>, document.getElementById('root'));

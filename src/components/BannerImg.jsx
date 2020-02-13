@@ -4,12 +4,14 @@ import styled from 'styled-components';
 const Img = styled.img`
     height: 300px;
     width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
+    position: centre;
+    object-fit: cover;
 `;
 
-const BannerImg = (img) => {
+const BannerImg = (props) => {
     return (
-        <Img src={img} />
+        <Img src={props.img} />
     );
     
 }

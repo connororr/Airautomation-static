@@ -4,6 +4,7 @@ import { Link, navigate } from '@reach/router';
 
 const Wrapper = styled(Link)`
     width: 350px;
+    height: 69px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -13,14 +14,21 @@ const Wrapper = styled(Link)`
     :hover {
         border-left: 4px solid #116149; 
     }
+    padding-top: 10px;
 `;
-const Title = styled.p`
+const Title = styled.div`
     font-size: 17.5px;
     font-weight: bold;
     width: 100%;
 
 `;
-const Description = styled.p`
+const Description = styled.div`
+    color: #798186;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: Akzidenz Grotesk BQ Light,Helvetica,Arial;
+    padding-top: 2.5px;
 `;
 
 const MenuButton = props => {
@@ -28,8 +36,7 @@ const MenuButton = props => {
     return (
         <Wrapper to={props.link}>
             <Title>{props.title}</Title>
-            {/*<Description>{props.description}</Description>*/}
-            <i class="fas fa-bars"></i>
+            <Description>{props.description}</Description>
         </Wrapper>
     )
 }
