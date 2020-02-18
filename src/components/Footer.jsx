@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+    border-top: 0.5px solid #9B9B9B;
 `;
 
 const Buttons = styled.div`
@@ -34,7 +35,7 @@ const Footer = () => {
         { name: 'Air & Automation', location: '' },
         { name: 'Valve range', location: '' },
         { name: 'Cylinders/others', location: '/industry/' },
-        { name: 'Mining', location: '/industry/' },
+        { name: 'Mining', location: '/industry' },
         { name: 'Timber Mills', location: 'industry/' },
         { name: 'Transport', location: '' }, // scroll down to the location bit when pressed
         { name: 'Contact Us', location: '' },

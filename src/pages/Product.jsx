@@ -22,7 +22,6 @@ const DescriptionWrapper = styled.div`
     height: 50%;
     width: 100%;
     border-top: 0.5px solid #9B9B9B;
-    border-bottom: 0.5px solid #9B9B9B;
     padding-bottom: 10%;
 `;
 
@@ -37,6 +36,7 @@ const Heading = styled.div`
     margin-left: 10%;
     font-weight: bold;
     font-size: 27.5px;
+    color: #116149;
 `;
 
 const Catalogue = styled.a`
@@ -75,7 +75,6 @@ const Product = (props) => {
                     target="_blank"
                 > View our catalogue here</Catalogue>
             </DescriptionWrapper>
-           
         </Wrapper>
     )
 

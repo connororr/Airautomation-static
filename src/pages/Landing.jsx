@@ -39,7 +39,7 @@ const Description = styled.p`
 
 const Locations = styled.div`
     height: 50%;
-    border: 1px solid black;
+    border-top: 0.5px solid #9B9B9B;
     display: flex;
     align-items; center;
 `;

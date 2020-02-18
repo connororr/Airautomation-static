@@ -72,11 +72,24 @@ const LogoWrapper = styled.img`
 const Buttons = styled.div`
     margin-left: 16px;
     @media screen and (max-width: 865px) {
-		display: none;
+        display: none;
     }
     display: flex;
     align-items: center;
 `;
+
+const CollapsibleDropdown = styled.div`
+    display: none;
+
+    @media screen and (max-width: 865px) {
+        display: flex;
+    }
+`;
+
+const CDButton = styled.div`
+    width: 100%;
+`;
+
 
 const SubMenu = styled.div`
     width: 20%;
@@ -135,6 +148,11 @@ const NavBar = () => {
                 <Link to='/'>
                     <LogoWrapper src={Logo}/>
                 </Link>
+                <CollapsibleDropdown>
+                    <CDButton>
+                        
+                    </CDButton>
+                </CollapsibleDropdown>
                 <Buttons>
                 <Button to=''>Air & Automation</Button>
                 <ProductsDropDownHover>
@@ -145,12 +163,12 @@ const NavBar = () => {
                             <MenuButton
                                 title='Our Valve Range'
                                 description='Testing button'
-                                link=''
+                                link='/product'
                             />
                             <MenuButton
                                 title='Cylinders/Other'
                                 description='Testing button2'
-                                link=''
+                                link='/product'
                             />
                     </DropDownMenu>
                 </ProductsDropDownHover>
@@ -165,7 +183,7 @@ const NavBar = () => {
                         <MenuButton
                             title='Mining'
                             description='Testing'
-                            link=''
+                            link='/industry'
                         />
                         <MenuButton
                             title='Transport'
@@ -176,6 +194,7 @@ const NavBar = () => {
                 </IndustriesDropDownHover>
                 <Button to=''>Contact Us</Button>
                 <Button to=''>About Us</Button>
+                
                 </Buttons>
                 
             </HeadingsMenu>
