@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import { Link, navigate } from '@reach/router';
 
 const Wrapper = styled(Link)`
-    width: 350px;
+    
+    width: ${props => props.shrunk ? "100%" : "350px"}
     height: 69px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    background-color: white;
     color: black;
     border-left: 4px solid transparent;
     padding-left: 15px;
@@ -34,10 +36,21 @@ const Description = styled.div`
 const MenuButton = props => {
 
     return (
+        <>
+        {props.shrunkNav ? (
+        <Wrapper to={props.link} shrunk>
+            <Title>{props.title}</Title>
+            <Description>{props.description}</Description>
+        </Wrapper>
+        )
+        : 
         <Wrapper to={props.link}>
             <Title>{props.title}</Title>
             <Description>{props.description}</Description>
         </Wrapper>
+        }
+        
+        </>
     )
 }
 export default MenuButton;
