@@ -75,8 +75,11 @@ const Product = styled.div`
 `;
 const ProductImage = styled.img`
     height: 100%;
-    width: 15%;
+    width: 20%;
     margin-right: 2.5%;
+    overflow: visible;
+    position: centre;
+    object-fit: cover;
 `;
 
 const ProductInfo = styled.div`
