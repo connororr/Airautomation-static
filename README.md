@@ -1,17 +1,6 @@
-## New Website for Air & Automation
+## New Website for Air & Automation - Frontend only
 
-The current website is around 20 years old, http://airautomation.com.au/we10_cylinders.html, and needs to be updated. 
-There are wireframes of some of the pages in src/mockups. 
-
-#### What needs to be done
-Currently four pages need to be made: 
-1. about us page
-2. industry page 
-3. valve/cylinder page 
-4. contact us page. 
-
-In the future I would also like to make an online product catalogue, and maybe online store, similar to this https://www.festo.com/us/en/c/automation/industrial-automation-id_pim2/ for pneumatic parts that are imported from italy.
-
+This is a version of the project at https://github.com/connororr/Airautomation. This project will just be a static site.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
