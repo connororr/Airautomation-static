@@ -158,12 +158,12 @@ const NavBar = () => {
                                 <MenuButton
                                     title='Our Valve Range'
                                     description='Testing button'
-                                    link='/type'
+                                    link='/valves'
                                 />
                                 <MenuButton
                                     title='Cylinders/Other'
                                     description='Testing button2'
-                                    link='/type'
+                                    link='/cylinders'
                                 />
                         </DropDownMenu>
                     </ProductsDropDownHover>
@@ -173,21 +173,21 @@ const NavBar = () => {
                             <MenuButton
                                 title='Timber Mills'
                                 description='Testing'
-                                link=''
+                                link='/timbermills'
                             />
                             <MenuButton
                                 title='Mining'
                                 description='Testing'
-                                link='/industry'
+                                link='/mining'
                             />
                             <MenuButton
                                 title='Transport'
                                 description='Testing'
-                                link=''
+                                link='/transport'
                             />
                         </DropDownMenu>
                     </IndustriesDropDownHover>
-                    <Button to=''>Contact Us</Button>
+                    <Button to='/contactus'>Contact Us</Button>
                     <Button to=''>About Us</Button>
                     </Buttons>
                     
